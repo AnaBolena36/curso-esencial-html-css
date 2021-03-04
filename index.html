@@ -4,35 +4,46 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
   <title>el blog de Leo</title>
  </head>
  <body>
   <header>
-    <p>Setup</p>
+
     <nav>
+    <details open>
+      <summary>
+        Setup
+      </summary>
       <ol>
         <li>
-          Google Chrome
+          <a href="#google-chrome">Google Chrome</a>
         </li>
         <li>
-          Visual Studio Code
+          <a href="#vsc"> Visual Studio Code</a>
         </li>
         <li>
-          Figma
+          <a href="#figma">Figma</a>
         </li>
         <li>
-          Git Hub
+          <a href="#git-hub">Git Hub</a>
         </li>
       </ol>
-      <p>Conceptos esenciales del Desarrollo Web</p>
+    </details>
+    <details open>
+      <summary>
+        Conceptos esenciales del Desarrollo Web
+      </summary>
       <ol>
-        <li>Que es HTML</li>
-        <li>Etiquetas</li>
-        <li>DOM</li>
-        <li>Atributos</li>
-        <li>Semantica</li>
-        <li>Que es CSS</li>
+        <li> <a href="#html">que es HTML</a> </li>
+        <li> <a href="#etiquetas">Etiquetas</a> </li>
+        <li><a href="#DOM">DOM</a></li>
+        <li><a href="#atributos">Atributos</a></li>
+        <li><a href="#semantica">Semantica</a></li>
+        <li><a href="#css">Que es CSS</a></li>
       </ol>
+    </details>
+
     </nav>
   </header>
   <h1>
@@ -45,26 +56,26 @@
     Setup
   </h2>
   <img src="imagenes/google-chrome.png" alt="logo de Google-Chrome" title="logo de Google-Chrome">
-  <h3>GoogleChrome</h3>
+  <h3 id="google-chrome">GoogleChrome</h3>
   <p>
     Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y herramientas de
     desarrollo avanzadas y de amigable uso.
   </p>
   <img src="imagenes/visual-studio-code.png" alt="logo de Visual Studio Code" title="logo de Visual Studio Code">
-  <h3>Visual Studio</h3>
+  <h3 id="vsc">Visual Studio</h3>
   <p>
     Visual Studio Code es el editor de texto más popular y potente del mercado actualmente, su fácil uso y la capacidad de
     extenderlo por medio de plugins lo hace el complemento perfecto para cualquier programador sin importar el lenguaje en
     el que se desemvuelva.
   </p>
   <img src="imagenes/figma.png" alt="logo de Figma" title="logo de Figma">
-  <h3>Figma</h3>
+  <h3 id="figma">Figma</h3>
   <p>
     Figma es una la herramienta más popular en la actualidad para entregar diseños a los desarrolladores para su
     implementación por su fácil uso porque puede ser usado directamente desde el navegador.
   </p>
   <img src="imagenes/ellipse-3.png" alt="logo de Git Hub" title="logo de Git Hub">
-  <h3>Git Hub</h3>
+  <h3 id="git-hub">Git Hub</h3>
   <p>
     Así como en Facebook te encuentran tus amigos, en Github te encuentran otras programadoras y programadores de todo el
     mundo, en vez de subir fotos de tus viajes aquí subes tu código y puedes elegir hacerlo “open source” o guardarlo de
@@ -72,25 +83,39 @@
   </p>
   <hr>
   <h2>Conceptos esenciales del desarrollo web</h2>
-  <h3>Que es HTML</h3>
+  <h3 id="html">Que es HTML</h3>
   <p>Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado
-  y la estructura del contenido.</p>
-  <h3>Etiquetas</h3>
+  y la estructura del contenido.<code>const name='your name'</code></p>
+  <pre>
+    const name='your name'
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+    &lt;/body&gt;
+    &lt;/html&gt;
+  </pre>
+
+  <h3 id="etiquetas">Etiquetas</h3>
   <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene
   características y usos diferentes aunque visualmente den un resultado similar.</p>
   <p>Muchas etiquetas son fácil de diferencias como los headings o las imágenes y otras diferentes como header, footer,
   section o div, aquí es donde la semántica será la respuesta y si sabemos un poco de inglés también podremos darnos una
   pequeña idea de su uso pero en este curso vamos a usar las más importantes y que serán parte de tu día a día como
   Software Developer.</p>
-  <h3>DOM</h3>
+  <h3 id="DOM">DOM</h3>
   <p>El Document Object Model es una estructura de árbol que representará todos nuestros proyectos web como si un árbol
   genealógico fuera: padres, hijos, hermanos con niveles infinitos. cuando entendemos esta anidación podemos identificar
   dependencias, herencias en css y que tan complejo es nuestro proyecto.</p>
   <img src="imagenes/dom.png" alt="DOM" title="representacion del DOM"/>
 
-
-
-  <h3>Semantica</h3>
+  <h3 id="semantica">Semantica</h3>
   <p>
     La semántica le brinda sentido a cada elemento existen en un sitio web, algunos elementos será meramente decorativos y
     no deben significar nada pero otros serán títulos y deberán estar en diferente jerarquías o alguna secciones serán más
@@ -98,18 +123,19 @@
     categorizar y será la herramientas más valiosa para estar en los primeros resultados de búsqueda SEO. También ayudará a
     la accesibilidad de tu sitio web, para que personas con habilidades diferentes puedan entender cada contenido.
   </p>
-  <h3>Atributos</h3>
+  <h3 id="atributos">Atributos</h3>
   <p>
     Los atributos le dan características extra a las etiquetas para complementar información y son pre programadas por el
     navegador, algunos atributos funcionan en todas las etiquetas de la misma forma como ‘class’ pero otros atributos
     funcionan en solo alguna etiquetas como src
   </p>
-  <h3>CSS</h3>
+  <h3 id="css">CSS</h3>
   <p>
   Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir
   la presentación de documentos HTML
   </p>
-  <img src="imagenes/CSS.png" alt="CSS logo" title=" Hojas de estilo en cascada"/>
+
+  <img src="imagenes/CSS.png" alt="CSS logo" title=" Hojas de estilo en cascada">
   <h2>Modelo de Caja</h2>
   <h3>El modelo de caja está compuesto por:</h3>
   <p>
@@ -129,6 +155,18 @@
     <li>border / border-top | border-right | border-bottom | border-left</li>
     <li>padding / padding-top | padding-right | padding-bottom | padding-left</li>
   </ul>
-
+  <h3>Propiedades lógicas para el modelo de caja:</h3>
+  <ul>
+    <li>inline-size / block-size</li>
+    <li>margin-block | margin-inline | margin-block-start | margin-block-end | margin-inline-start | margin-inline-end</li>
+    <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start | border-inline-end</li>
+    <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
+  </ul>
+  <h3>Modelo de caja</h3>
+  <p>
+    Si tienes alguna pregunta escríbeme a
+    <a href="mailto:me@leonidasesteban.com">me@leonidasesteban.com</a>
+  </p>
+  <script src="codigo.js"></script>
 </body>
 </html>
